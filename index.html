@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form to Email</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="example">
+      <div class="container">
+        <form name="form" id="contact" method="post" action="https://formspree.io/tobias.strebitzer@magloft.com">
+          <h3>Contact Form</h3>
+          <h4>Fill the form to get in touch with us!</h4>
+          <div>
+            <fieldset>
+              <input name="name" placeholder="Your name" type="text" tabindex="1" required minlength="3" autofocus>
+            </fieldset>
+            <fieldset>
+              <input name="_replyto" placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input name="phone" placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+            </fieldset>
+            <fieldset>
+              <input name="website" placeholder="Your Web Site (optional)" type="url" tabindex="4">
+            </fieldset>
+            <fieldset>
+              <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+      <a class="source-code" href="https://github.com/tobiasstrebitzer/form-to-email/blob/master/index.html" target="_blank">View Source Code</a>
+    </div>
+  </body>
+</html>
